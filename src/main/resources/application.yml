@@ -1,0 +1,22 @@
+springdoc:
+  api-docs:
+    path: /admin/api-docs
+  swagger-ui:
+    path: /admin/swagger-ui
+
+server:
+  url: http://localhost:8080
+
+redis:
+  port: 6379
+  start-test-instance: true
+
+caffeine:
+  cache-name: links
+  initial-capacity: 10
+  maximum-size: 100
+  expire-after-access-seconds: 10
+
+slug:
+  length: 7
+  alphabet: 123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz
