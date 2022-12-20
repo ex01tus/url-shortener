@@ -23,11 +23,6 @@ class LinkServiceTest {
         linkService = LinkService(redisTemplate, slugGenerator, serverUrl)
     }
 
-    @BeforeAll
-    fun setup() {
-        println(">> Setup")
-    }
-
     @BeforeEach
     fun setUp() {
         clearAllMocks()
